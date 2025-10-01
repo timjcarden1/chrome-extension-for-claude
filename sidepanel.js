@@ -106,10 +106,10 @@ function deleteFeedback(id) {
 function copyAllFeedback() {
     if (feedbackItems.length === 0) return;
 
-    // Format for Claude
+    // Format feedback
     const formatted = feedbackItems.map((item, index) => {
-        return `[${index + 1}] HIGHLIGHTED TEXT:\n${item.text}\n\nFEEDBACK:\n${item.feedback}\n`;
-    }).join('\n---\n\n');
+        return `Section ${index + 1}:\n\n${item.text}\n\nFeedback ${index + 1}:\n\n${item.feedback}`;
+    }).join('\n\n');
 
     navigator.clipboard.writeText(formatted).then(() => {
         showToast('✓ Copied to clipboard!');
@@ -121,10 +121,6 @@ function copyAllFeedback() {
 
 // Clear all feedback
 function clearAllFeedback() {
-    if (!confirm('Are you sure you want to clear all feedback items?')) {
-        return;
-    }
-
     feedbackItems = [];
     chrome.storage.local.set({ feedbackItems: [] }, () => {
         renderFeedback();
