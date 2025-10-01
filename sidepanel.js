@@ -153,6 +153,28 @@ function showToast(message, type = 'success') {
 document.getElementById('copy-all-btn').addEventListener('click', copyAllFeedback);
 document.getElementById('clear-all-btn').addEventListener('click', clearAllFeedback);
 
+// Keyboard shortcuts
+document.addEventListener('keydown', (e) => {
+    // Cmd+E (Mac) or Ctrl+E (Windows/Linux) to copy all
+    if ((e.metaKey || e.ctrlKey) && !e.shiftKey && !e.altKey && e.key === 'e') {
+        e.preventDefault();
+        copyAllFeedback();
+    }
+
+    // Cmd+Backspace (Mac) or Ctrl+Backspace (Windows/Linux) to clear all
+    if ((e.metaKey || e.ctrlKey) && !e.shiftKey && !e.altKey && e.key === 'Backspace') {
+        e.preventDefault();
+        clearAllFeedback();
+    }
+
+    // Escape to close the side panel
+    if (e.key === 'Escape') {
+        e.preventDefault();
+        // Send message to background to close side panel
+        chrome.runtime.sendMessage({ type: 'CLOSE_SIDE_PANEL' });
+    }
+});
+
 // Listen for messages from content script
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.type === 'FEEDBACK_ADDED') {

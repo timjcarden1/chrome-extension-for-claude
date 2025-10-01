@@ -82,6 +82,11 @@ function saveFeedback(feedback) {
                 type: 'FEEDBACK_ADDED',
                 item: feedbackItem
             });
+
+            // Automatically open the side panel
+            chrome.runtime.sendMessage({
+                type: 'OPEN_SIDE_PANEL'
+            });
         });
     });
 
