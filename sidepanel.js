@@ -107,9 +107,11 @@ function copyAllFeedback() {
     if (feedbackItems.length === 0) return;
 
     // Format feedback
-    const formatted = feedbackItems.map((item, index) => {
+    const sections = feedbackItems.map((item, index) => {
         return `Section ${index + 1}:\n\n${item.text}\n\nFeedback ${index + 1}:\n\n${item.feedback}`;
     }).join('\n\n');
+
+    const formatted = `FEEDBACK:\n\n${sections}`;
 
     navigator.clipboard.writeText(formatted).then(() => {
         showToast('✓ Copied to clipboard!');
