@@ -1,0 +1,19 @@
+# ZIP packages (GitHub provides download)
+*.zip
+
+# Chrome Web Store files (not needed for GitHub distribution)
+PRIVACY_POLICY.md
+STORE_LISTING.md
+SUBMISSION_GUIDE.md
+TEAM_SHARING_OPTIONS.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+

@@ -4,18 +4,14 @@ Hey team! Here's how to install this Chrome extension. It's super quick - just f
 
 ---
 
-## 📥 Step 1: Download
+## 📥 Step 1: Download from GitHub
 
-**Option A: Download ZIP from GitHub**
-1. Go to: https://github.com/timothycarden/chrome-extension-for-claude
+1. Go to: https://github.com/timjcarden1/chrome-extension-for-claude
 2. Click the green **"Code"** button
 3. Click **"Download ZIP"**
 4. Unzip the file (double-click on Mac, right-click → Extract on Windows)
-5. Remember where you saved the folder!
-
-**Option B: Direct Share** (if Timothy sent you the folder)
-- Just save the folder somewhere permanent (like Documents or Desktop)
-- Don't delete it - Chrome needs it to keep working!
+5. Save the folder somewhere permanent (like Documents or Desktop)
+   - ⚠️ **Important:** Don't delete this folder - Chrome needs it to keep working!
 
 ---
 
@@ -37,7 +33,7 @@ Hey team! Here's how to install this Chrome extension. It's super quick - just f
 ## 📂 Step 4: Load the Extension
 
 1. Click **"Load unpacked"** button (top-left area)
-2. **Select the folder** you downloaded/saved (the one with all the files)
+2. **Select the folder** you downloaded (the one with all the files)
 3. Click **"Select"** or **"Open"**
 
 **✅ Done!** You should see the extension appear in your list!
@@ -55,11 +51,12 @@ Hey team! Here's how to install this Chrome extension. It's super quick - just f
 
 ---
 
-## ⚠️ Important Notes
+## 🔄 Getting Updates
 
-- **Don't delete the extension folder** - Chrome needs it to stay where it is
-- **Ignore any "developer mode extension" warnings** - it's totally safe, just not from the Web Store
-- **Want updates?** Timothy will send you a new folder - just delete the old one from `chrome://extensions/` and load the new one
+When a new version is available:
+1. Go to `chrome://extensions/`
+2. Remove the old version (click "Remove")
+3. Download fresh from GitHub and reinstall (follow steps above)
 
 ---
 
@@ -84,4 +81,3 @@ Hey team! Here's how to install this Chrome extension. It's super quick - just f
 Questions? Reach out to Timothy or open an issue on GitHub.
 
 Happy feedback collecting! 💜
-
