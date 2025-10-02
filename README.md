@@ -11,27 +11,21 @@ A Chrome extension that streamlines collecting feedback on text in AI conversati
 - 🗑️ **Easy Management**: Delete individual items or clear all at once
 - ⚡ **Zero Friction**: No more copy-pasting text back and forth
 
-## 🚀 Installation
+## 🚀 Quick Installation (2 Minutes)
 
-### Option 1: Load Unpacked (Developer Mode)
+### Step 1: Download
+1. Click the green **"Code"** button at the top of this page
+2. Click **"Download ZIP"**
+3. Unzip the file and save the folder somewhere permanent (Documents or Desktop - **don't delete it!**)
 
-1. **Download this extension**
-   - Clone or download this repository to your computer
+### Step 2: Install in Chrome
+1. Open Chrome and go to: **`chrome://extensions/`**
+2. Toggle **"Developer mode"** ON (top-right corner)
+3. Click **"Load unpacked"** (top-left)
+4. Select the folder you just saved
+5. ✅ **Done!** The extension icon will appear in your toolbar
 
-2. **Open Chrome Extensions**
-   - Navigate to `chrome://extensions/` in your Chrome browser
-   - Or click the puzzle icon → "Manage Extensions"
-
-3. **Enable Developer Mode**
-   - Toggle "Developer mode" in the top-right corner
-
-4. **Load the Extension**
-   - Click "Load unpacked"
-   - Select the `chrome-extension-for-claude` folder
-   - The extension icon should appear in your toolbar
-
-### Option 2: Chrome Web Store (Coming Soon)
-This extension will be published to the Chrome Web Store soon for easier installation.
+**📄 Detailed Instructions:** See [INSTALL_INSTRUCTIONS.md](INSTALL_INSTRUCTIONS.md) for step-by-step guide with troubleshooting.
 
 ## 📖 How to Use
 
