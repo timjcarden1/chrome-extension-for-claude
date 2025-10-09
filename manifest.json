@@ -10,10 +10,7 @@
         "tabs"
     ],
     "host_permissions": [
-        "https://claude.ai/*",
-        "https://chat.openai.com/*",
-        "https://chatgpt.com/*",
-        "https://grok.com/*"
+        "<all_urls>"
     ],
     "background": {
         "service_worker": "background.js"
@@ -27,10 +24,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://claude.ai/*",
-                "https://chat.openai.com/*",
-                "https://chatgpt.com/*",
-                "https://grok.com/*"
+                "<all_urls>"
             ],
             "js": [
                 "content.js"
